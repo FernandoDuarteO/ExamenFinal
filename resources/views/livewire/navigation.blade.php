@@ -76,4 +76,14 @@
             </a>
         </li>
     </ul>
+
+    <ul class="navbar-nav mb-md-3">
+        <li class="nav-item {{ Request::route()->named('stages.index') ? 'active' : '' }}">
+            <a class="nav-link {{ Request::route()->named('stages.index') ? 'active' : '' }}"
+                href="{{ route('stages.index') }}" wire:navigate>
+                <i class="fas fa-dove text-orange"></i> Etapa
+            </a>
+        </li>
+    </ul>
+
 </div>

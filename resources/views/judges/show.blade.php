@@ -5,7 +5,7 @@
     <div class="col-x1-x12 order-x1-1">
         <div class="card bg-secondary shadow">
             <div class="card-header bg-white border-0">
-                <div class="row aligb-items-center">
+                <div class="row align-items-center">
                     <div class="col-8">
                         <h3 class="mb-0"><i class="fas fa-newspaper"> Ver Juez</i></h3>
                     </div>

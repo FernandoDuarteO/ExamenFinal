@@ -8,6 +8,7 @@ use App\Http\Controllers\StudentController;
 use App\Http\Controllers\CarrerController;
 
 use App\Http\Controllers\JudgeController;
+use App\Http\Controllers\StageController;
 
 use App\Exports\JudgesExport;
 use Maatwebsite\Excel\Facades\Excel;
@@ -77,14 +78,15 @@ Route::middleware('auth')->group(function () {
     });
 
 
-    
+
     //rutas de posts de tipo resource
      Route::resource('/students', StudentController::class);
      Route::resource('/carrers', CarrerController::class);
 
      Route::resource('/judges', JudgeController::class);
+     Route::resource('/stages', StageController::class);
 
-     
+
 
     // Route::resource('/categories', CategoryController::class);
     // Route::resource('/animals', AnimalController::class);

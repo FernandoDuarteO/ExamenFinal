@@ -25,43 +25,39 @@
                         </thead>
 
                     <tbody>
-                        @foreach ($stages as $stage )
-                        <tr>
-                            <td> {{ $stage->document_type }}</td>
-                            <td> {{ $stage->description }}</td>
-                            <td> {{ $stage->file }}</td>
-                            <td> {{ $stage->created_at }}</td>
-
-                            <td style="white-space: nowrap; display: flex; align-items: center;">
-                                <a href="{{ route('stages.show', $stage->id) }}" class="btn btn-primary btn-sm" style="margin-right: 5px">
-                                    <i class="fas fa-eye"></i> Mostrar
-                                </a>
-                                <a href="{{ route('stages.edit', $stage->id) }}" class="btn btn-info btn-sm" style="margin-right: 5px">
-                                    <i class="fas fa-eye"></i> Editar
-                                </a>
-                                <form action="{{ route('stages.destroy', $stage->id) }}" method="POST"
-                                    style="display: inline-block; margin: 0; display: flex; align-items: center;"
-                                    onsubmit="return confirm('¿Esta seguro que desea eliminar esta Etapa? Esta accion no se puede deshacer,');">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="btn btn-danger btn-sm">
-                                        <i class="fas fa-trash"></i> Eliminar
-                                    </button>
-                                </form>
-                            </td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-             </div>
-
-             <div class="card-footer py-4">
-                <nav aria-label="..." class="d-flex flex-wrap justify-content-center justify-content-lg-start">
-                    {{ $stages->links()}}
-                </nav>
-             </div>
-         </div>
-    </div>
-</div>
+    @foreach ($stages as $stage )
+    <tr>
+        <td> {{ $stage->document_type }}</td>
+        <td> {{ $stage->description }}</td>
+        <td>
+            @if($stage->file)
+                <a href="{{ asset('storage/' . $stage->file) }}" target="_blank">
+                    {{ $stage->original_name ?? 'Descargar archivo' }}
+                </a>
+            @else
+                No hay archivo
+            @endif
+        </td>
+        <td> {{ $stage->created_at }}</td>
+        <td style="white-space: nowrap; display: flex; align-items: center;">
+            <a href="{{ route('stages.show', $stage->id) }}" class="btn btn-primary btn-sm" style="margin-right: 5px">
+                <i class="fas fa-eye"></i> Mostrar
+            </a>
+            <a href="{{ route('stages.edit', $stage->id) }}" class="btn btn-info btn-sm" style="margin-right: 5px">
+                <i class="fas fa-eye"></i> Editar
+            </a>
+            <form action="{{ route('stages.destroy', $stage->id) }}" method="POST"
+                style="display: inline-block; margin: 0; display: flex; align-items: center;"
+                onsubmit="return confirm('¿Esta seguro que desea eliminar esta Etapa? Esta accion no se puede deshacer,');">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger btn-sm">
+                    <i class="fas fa-trash"></i> Eliminar
+                </button>
+            </form>
+        </td>
+    </tr>
+    @endforeach
+</tbody>
 
 @endsection

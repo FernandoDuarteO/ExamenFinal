@@ -19,10 +19,31 @@
             </div>
         </div>
         <div class="card-body container-fluid">
-            <form action="{{ route("stages.update", $stages->id) }}" method="POST">
+            <!-- AGREGA enctype para permitir subir archivos -->
+            <form action="{{ route("stages.update", $stages->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 @include('stages.form')
+                
+                <!-- Si ya hay archivo, mostrar el enlace de descarga y nombre -->
+                @if($stages->file)
+                    <div class="form-group mt-3">
+                        <label class="form-control-label" for="archivo_actual">
+                            <i class="fas fa-paperclip"></i> Archivo actual
+                        </label>
+                        <p>
+                            <a href="{{ asset('storage/' . $stages->file) }}" target="_blank">
+                                {{ $stages->original_name ?? 'Descargar archivo' }}
+                            </a>
+                        </p>
+                    </div>
+                @endif
+
+                <!-- <div class="mt-4">
+                    <button type="submit" class="btn btn-success">
+                        <i class="fas fa-save"></i> Guardar Etapa
+                    </button>
+                </div> -->
             </form>
         </div>
     </div>

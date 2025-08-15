@@ -56,10 +56,27 @@
                 </div>
             </div>
 
-
+            {{-- Sección para mostrar el archivo --}}
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label class="form-control-label" for="archivo">
+                            <i class="fas fa-paperclip"></i> Archivo
+                        </label>
+                        @if($stages->file)
+                            <p>
+                                <a href="{{ asset('storage/' . $stages->file) }}" target="_blank">
+                                    {{ $stages->original_name ?? 'Descargar archivo' }}
+                                </a>
+                            </p>
+                        @else
+                            <p>No hay archivo</p>
+                        @endif
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
 
 @endsection
-

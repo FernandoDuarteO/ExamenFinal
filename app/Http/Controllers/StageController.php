@@ -29,17 +29,21 @@ class StageController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StageRequest $request)
-    {
-        Stage::create($request->validated());
-        return redirect()->route('stages.index')->with('success', 'Etapa creado exitosamente.');
+public function store(StageRequest $request)
+{
+    $data = $request->validated();
 
-
-        $request->validate([
-            'file' => 'required|file|mimes:pdf,doc,docx,xls,xlsx|max:10240'
-        ]);
-
+    if ($request->hasFile('file')) {
+        $file = $request->file('file');
+        $filePath = $file->store('stages', 'public');
+        $data['file'] = $filePath;
+        $data['original_name'] = $file->getClientOriginalName(); // <-- guarda el nombre original
     }
+
+    Stage::create($data);
+
+    return redirect()->route('stages.index')->with('success', 'Etapa creada exitosamente.');
+}
 
     /**
      * Display the specified resource.
@@ -62,13 +66,29 @@ class StageController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(StageRequest $request, int $id)
-    {
-        $stages = Stage::find($id);
-        $stages->update($request->validated());
+public function update(StageRequest $request, int $id)
+{
+    $stages = Stage::find($id);
+    $data = $request->validated();
 
-        return redirect()->route('stages.index')->with('updated', 'Etapa actualizado exitosamente.');
+    // Si suben un nuevo archivo, reemplaza el archivo anterior
+    if ($request->hasFile('file')) {
+        // Opcional: Elimina el archivo anterior si existe
+        if ($stages->file && \Storage::disk('public')->exists($stages->file)) {
+            \Storage::disk('public')->delete($stages->file);
+        }
+
+        $file = $request->file('file');
+        $filePath = $file->store('stages', 'public');
+        $data['file'] = $filePath;
+        // Guarda también el nombre original del archivo
+        $data['original_name'] = $file->getClientOriginalName();
     }
+
+    $stages->update($data);
+
+    return redirect()->route('stages.index')->with('updated', 'Etapa actualizada exitosamente.');
+}
 
     /**
      * Remove the specified resource from storage.
@@ -76,8 +96,11 @@ class StageController extends Controller
     public function destroy(int $id)
     {
         $stages = Stage::find($id);
+        // Opcional: puedes borrar el archivo del storage aquí si quieres
+        // Storage::disk('public')->delete($stages->file);
+
         $stages->delete();
 
-        return redirect()->route('stages.index')->with('deleted', 'Etapa eliminado exitosamente.');
+        return redirect()->route('stages.index')->with('deleted', 'Etapa eliminada exitosamente.');
     }
 }

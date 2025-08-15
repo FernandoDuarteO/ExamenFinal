@@ -33,6 +33,12 @@ class StageController extends Controller
     {
         Stage::create($request->validated());
         return redirect()->route('stages.index')->with('success', 'Etapa creado exitosamente.');
+
+
+        $request->validate([
+            'file' => 'required|file|mimes:pdf,doc,docx,xls,xlsx|max:10240'
+        ]);
+
     }
 
     /**

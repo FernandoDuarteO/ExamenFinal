@@ -25,25 +25,24 @@
         </div>
     </div>
 
-    <div class="row">
+    {{-- <div class="row">
         <div class="col-lg-6">
             <div class="form-group">
                 <label class="form-control-label" for="file">Archivo</label>
                 <input type="file" id="file" name="file" class="form-control form-control-alternative">
             </div>
         </div>
+    </div> --}}
+
+    <div class="form-group">
+        <label for="file">Archivo</label>
+        <input type="file" name="file" id="file" class="form-control"
+               accept=".pdf,.doc,.docx,.xls,.xlsx" required>
+        @if ($errors->has('file'))
+            <span class="text-danger">{{ $errors->first('file') }}</span>
+        @endif
     </div>
-    
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="form-group">
-                <label class="form-control-label" for="case_date">Fecha del caso</label>
-                <input type="datetime" id="case_date" name="case_date" class="form-control form-control-alternative"
-                    placeholder="Ingresar la fecha del caso"
-                    value="{{ old('case_date', $stages->case_date) }}">
-            </div>
-        </div>
-    </div>
+
 
 </div>
 

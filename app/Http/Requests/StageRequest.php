@@ -25,8 +25,8 @@ class StageRequest extends FormRequest
         return [
             'document_type' => 'required',
             'description' => 'required|string|min:10|max:255',
-            'file' => 'required|file|mimes:pdf,doc,docx,xlsx|max:2048',
-            'case_date' => 'required|datetime'
+            'file' => 'required|file|mimes:pdf,doc,docx,xls,xlsx|max:2048'
+
         ];
     }
     public function messages(){
@@ -40,11 +40,9 @@ class StageRequest extends FormRequest
 
             'file.required' => 'El archivo es obligatorio.',
             'file.file' => 'El archivo debe ser un archivo válido.',
-            'file.mimes' => 'El archivo debe ser un PDF, DOC o DOCX.',
+            'file.mimes' => 'El archivo debe ser un PDF, DOC, DOCX, XLS o XLSX.',
             'file.max' => 'El archivo no puede exceder los 2MB.',
 
-            'case_date.required' => 'La fecha del caso es obligatoria.',
-            'case_date.datetime' => 'La fecha del caso debe ser una fecha válida.'
         ];
     }
 }

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('document_type');
             $table->string('description');
             $table->binary('file');
-            $table->datetime('case_date');
+            /*$table->datetime('case_date');*/
             $table->timestamps();
         });
     }

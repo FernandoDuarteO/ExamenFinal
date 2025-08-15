@@ -7,6 +7,7 @@
                 <div class="card-header border-0">
                     <div class="d-flex justify-content-between align-items-center">
                         <h3 class="mb-0">Juez</h3>
+                        <div class="btn-group mt-2 mt-0" role="group" aria-label="Botones de acción">
                         <a href="{{ route('judges.export.excel') }}" class="btn btn-success me-2">
                                 <i class="fas fa-file-excel me-1"></i> Exportar Excel
                             </a>

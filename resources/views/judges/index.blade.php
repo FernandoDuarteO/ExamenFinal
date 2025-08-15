@@ -5,8 +5,11 @@
         <div class="col">
             <div class="card shadow">
                 <div class="card-header border-0">
-                    <div class="d-flex justify-content-between align-itemd-center">
+                    <div class="d-flex justify-content-between align-items-center">
                         <h3 class="mb-0">Juez</h3>
+                        <a href="{{ route('judges.export.excel') }}" class="btn btn-success me-2">
+                                <i class="fas fa-file-excel me-1"></i> Exportar Excel
+                            </a>
                         <a href="{{ route('judges.create') }}" class="btn btn-primary">
                             <i class="fas fa-plus"></i> Nuevo Juez
                         </a>

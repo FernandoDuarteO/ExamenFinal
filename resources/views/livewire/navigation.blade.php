@@ -104,4 +104,13 @@
         </li>
     </ul>
 
+    <ul class="navbar-nav mb-md-3">
+        <li class="nav-item {{ Request::route()->named('halls.index') ? 'active' : '' }}">
+            <a class="nav-link {{ Request::route()->named('halls.index') ? 'active' : '' }}"
+                href="{{ route('halls.index') }}" wire:navigate>
+                <i class="fas fa-dove text-orange"></i> Sala
+            </a>
+        </li>
+    </ul>
+
 </div>

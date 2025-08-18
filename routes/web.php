@@ -10,6 +10,7 @@ use App\Http\Controllers\CarrerController;
 use App\Http\Controllers\JudgeController;
 use App\Http\Controllers\StageController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\LawyerController;
 
 use App\Exports\JudgesExport;
 use Maatwebsite\Excel\Facades\Excel;
@@ -87,6 +88,7 @@ Route::middleware('auth')->group(function () {
      Route::resource('/judges', JudgeController::class);
      Route::resource('/stages', StageController::class);
      Route::resource('/customers', CustomerController::class);
+     Route::resource('/lawyers', LawyerController::class);
 
 
 

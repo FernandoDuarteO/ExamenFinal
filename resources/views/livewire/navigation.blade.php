@@ -95,4 +95,13 @@
         </li>
     </ul>
 
+    <ul class="navbar-nav mb-md-3">
+        <li class="nav-item {{ Request::route()->named('lawyers.index') ? 'active' : '' }}">
+            <a class="nav-link {{ Request::route()->named('lawyers.index') ? 'active' : '' }}"
+                href="{{ route('lawyers.index') }}" wire:navigate>
+                <i class="fas fa-dove text-orange"></i> Abogado
+            </a>
+        </li>
+    </ul>
+
 </div>

@@ -31,7 +31,7 @@ class LawyerRequest extends FormRequest
             'email' => ['required','string','min:10','max:255',Rule::unique('lawyers')->ignore($this->lawyer)],
             'professional_code' => ['required','string','min:5','max:45',Rule::unique('lawyers')->ignore($this->lawyer)],
             'place_birth' => 'required|string|min:4|max:255',
-            'department' => 'required|string|min:4|max:255',
+            'department' => 'required|string|min:3|max:255',
             'country' => 'required|string|min:5|max:255',
             'marital_status' => 'required|string|min:5|max:25'
         ];
@@ -83,7 +83,7 @@ class LawyerRequest extends FormRequest
 
             'department.required' => 'El departamento del abogado es requerido.',
             'department.string' => 'El departamento del abogado debe ser una cadena de texto.',
-            'department.min' => 'El departamento del abogado debe contener un mínimo de 4 caracteres.',
+            'department.min' => 'El departamento del abogado debe contener un mínimo de 3 caracteres.',
             'department.max' => 'El departamento del abogado debe contener un máximo de 255 caracteres.',
 
             'country.required' => 'El país del abogado es requerido.',

@@ -30,7 +30,7 @@ class CustomerRequest extends FormRequest
             'identification_card' => ['required','string','min:16',Rule::unique('customers')->ignore($this->customer)],
             'phone_number' => ['required','string','min:8',Rule::unique('customers')->ignore($this->customer)],
             'place_birth' => 'required|string|min:4|max:255',
-            'department' => 'required|string|min:4|max:255',
+            'departments' => 'required|string|min:4|max:255',
             'country' => 'required|string|min:5|max:255',
             'marital_status' => 'required|string|min:5|max:25'
         ];
@@ -73,10 +73,10 @@ class CustomerRequest extends FormRequest
             'place_birth.min' => 'El lugar de nacimiento del cliente debe contener un mínimo de 4 caracteres.',
             'place_birth.max' => 'El lugar de nacimiento del cliente debe contener un máximo de 255 caracteres.',
 
-            'department.required' => 'El departamento del cliente es requerido.',
-            'department.string' => 'El departamento del cliente debe ser una cadena de texto.',
-            'department.min' => 'El departamento del cliente debe contener un mínimo de 4 caracteres.',
-            'department.max' => 'El departamento del cliente debe contener un máximo de 255 caracteres.',
+            'departments.required' => 'El departamento del cliente es requerido.',
+            'departments.string' => 'El departamento del cliente debe ser una cadena de texto.',
+            'departments.min' => 'El departamento del cliente debe contener un mínimo de 4 caracteres.',
+            'departments.max' => 'El departamento del cliente debe contener un máximo de 255 caracteres.',
 
             'country.required' => 'El país del cliente es requerido.',
             'country.string' => 'El país del cliente debe ser una cadena de texto.',

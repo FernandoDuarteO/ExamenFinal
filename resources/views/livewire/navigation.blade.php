@@ -86,4 +86,13 @@
         </li>
     </ul>
 
+    <ul class="navbar-nav mb-md-3">
+        <li class="nav-item {{ Request::route()->named('customers.index') ? 'active' : '' }}">
+            <a class="nav-link {{ Request::route()->named('customers.index') ? 'active' : '' }}"
+                href="{{ route('customers.index') }}" wire:navigate>
+                <i class="fas fa-dove text-orange"></i> Cliente
+            </a>
+        </li>
+    </ul>
+
 </div>

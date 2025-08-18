@@ -24,8 +24,8 @@
                 @csrf
                 @method('PUT')
                 @include('stages.form')
-                
-                <!-- Si ya hay archivo, mostrar el enlace de descarga y nombre -->
+
+
                 @if($stages->file)
                     <div class="form-group mt-3">
                         <label class="form-control-label" for="archivo_actual">
@@ -39,11 +39,6 @@
                     </div>
                 @endif
 
-                <!-- <div class="mt-4">
-                    <button type="submit" class="btn btn-success">
-                        <i class="fas fa-save"></i> Guardar Etapa
-                    </button>
-                </div> -->
             </form>
         </div>
     </div>

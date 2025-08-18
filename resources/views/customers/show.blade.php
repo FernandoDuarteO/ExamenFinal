@@ -1,5 +1,5 @@
 @extends('layouts.panel')
-@section('title', 'Juez/Show')
+@section('title', 'Cliente/Show')
 
 @section('content')
     <div class="col-x1-x12 order-x1-1">
@@ -10,7 +10,7 @@
                         <h3 class="mb-0"><i class="fas fa-newspaper"> Ver Juez</i></h3>
                     </div>
                     <div class="col-4 text-right">
-                        <a href="{{ route('judges.index') }}" class="btn btn-sm btn-primary">
+                        <a href="{{ route('customers.index') }}" class="btn btn-sm btn-primary">
                             <i class="fas fa-list"></i> Volver
                         </a>
                     </div>
@@ -20,16 +20,16 @@
     </div>
 
     <div class="card-body">
-        <h6 class="heading-small text-muted mb-4">Información del Juez</h6>
+        <h6 class="heading-small text-muted mb-4">Información del Cliente</h6>
         <div class="pl-lg-4">
 
             <div class="row">
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="name">
-                            <i class="fas fa-user"></i> Nombre Completo del Juez
+                            <i class="fas fa-user"></i> Nombre Completo del Cliente
                         </label>
-                        <p>{{ $judges->name }}</p>
+                        <p>{{ $customers->name }}</p>
                     </div>
                 </div>
             </div>
@@ -38,9 +38,9 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="age">
-                            <i class="fas fa-user"></i> Edad del Juez
+                            <i class="fas fa-user"></i> Edad del Cliente
                         </label>
-                        <p>{{ $judges->age }}</p>
+                        <p>{{ $customers->age }}</p>
                     </div>
                 </div>
             </div>
@@ -49,20 +49,34 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="gender">
-                            <i class="fas fa-user"></i> Género del Juez
+                            <i class="fas fa-user"></i> Género del Cliente
                         </label>
-                        <p>{{ $judges->gender }}</p>
+                        <p>{{ $customers->gender }}</p>
                     </div>
                 </div>
             </div>
+
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label class="form-control-label" for="address">
+                            <i class="fas fa-user"></i> Dirección del Cliente
+                        </label>
+                        <p>{{ $customers->address }}</p>
+                    </div>
+                </div>
+            </div>
+
+
 
             <div class="row">
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="identification_card">
-                            <i class="fas fa-user"></i> Identificación del Juez
+                            <i class="fas fa-user"></i> Identificación del Cliente
                         </label>
-                        <p>{{ $judges->identification_card }}</p>
+                        <p>{{ $customers->identification_card }}</p>
                     </div>
                 </div>
             </div>
@@ -71,20 +85,9 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="phone_number">
-                            <i class="fas fa-user"></i> Número de Telefono del Juez
+                            <i class="fas fa-user"></i> Número de Telefono del Cliente
                         </label>
-                        <p>{{ $judges->phone_number }}</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="form-group">
-                        <label class="form-control-label" for="email">
-                            <i class="fas fa-user"></i> Email del Juez
-                        </label>
-                        <p>{{ $judges->email }}</p>
+                        <p>{{ $customers->phone_number }}</p>
                     </div>
                 </div>
             </div>
@@ -93,9 +96,9 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="place_birth">
-                            <i class="fas fa-user"></i> Lugar de Nacimiento del Juez
+                            <i class="fas fa-user"></i> Lugar de Nacimiento del Cliente
                         </label>
-                        <p>{{ $judges->place_birth }}</p>
+                        <p>{{ $customers->place_birth }}</p>
                     </div>
                 </div>
             </div>
@@ -103,21 +106,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="form-group">
-                        <label class="form-control-label" for="department">
-                            <i class="fas fa-user"></i> Dirección del Juez
+                        <label class="form-control-label" for="departments">
+                            <i class="fas fa-user"></i> Departamento del Cliente
                         </label>
-                        <p>{{ $judges->department }}</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="form-group">
-                        <label class="form-control-label" for="residence">
-                            <i class="fas fa-user"></i> Residencia del Juez
-                        </label>
-                        <p>{{ $judges->residence }}</p>
+                        <p>{{ $customers->departments }}</p>
                     </div>
                 </div>
             </div>
@@ -126,9 +118,9 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="country">
-                            <i class="fas fa-user"></i> Pais del Juez
+                            <i class="fas fa-user"></i> Pais del Cliente
                         </label>
-                        <p>{{ $judges->country }}</p>
+                        <p>{{ $customers->country }}</p>
                     </div>
                 </div>
             </div>
@@ -137,9 +129,9 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="marital_status">
-                            <i class="fas fa-user"></i> Estado Civil del Juez
+                            <i class="fas fa-user"></i> Estado Civil del Cliente
                         </label>
-                        <p>{{ $judges->marital_status }}</p>
+                        <p>{{ $customers->marital_status }}</p>
                     </div>
                 </div>
             </div>

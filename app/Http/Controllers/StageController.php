@@ -37,7 +37,7 @@ public function store(StageRequest $request)
         $file = $request->file('file');
         $filePath = $file->store('stages', 'public');
         $data['file'] = $filePath;
-        $data['original_name'] = $file->getClientOriginalName(); // <-- guarda el nombre original
+        $data['original_name'] = $file->getClientOriginalName();
     }
 
     Stage::create($data);

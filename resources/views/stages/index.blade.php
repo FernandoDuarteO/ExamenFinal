@@ -39,6 +39,7 @@
             @endif
         </td>
         <td> {{ $stage->created_at }}</td>
+
         <td style="white-space: nowrap; display: flex; align-items: center;">
             <a href="{{ route('stages.show', $stage->id) }}" class="btn btn-primary btn-sm" style="margin-right: 5px">
                 <i class="fas fa-eye"></i> Mostrar

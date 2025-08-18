@@ -38,23 +38,14 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="description">
-                            <i class="fas fa-user"></i>
+                            <i class="fas fa-user"></i> Descripción de la Etapa
                         </label>
-                        <p>{{ $stages->description }}</p> Descripción de la Etapa
+                        <p>{{ $stages->description }}</p>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="form-group">
-                        <label class="form-control-label" for="case_date">
-                            <i class="fas fa-user"></i>
-                        </label>
-                        <p>{{ $stages->case_date }}</p> Fecha de la Etapa
-                    </div>
-                </div>
-            </div>
+
 
             {{-- Sección para mostrar el archivo --}}
             <div class="row">

@@ -10,7 +10,7 @@ class Audience extends Model
     use HasFactory;
     protected $perpage = 5;
 
-    protected $fillable =['hearing_date', 'description', 'hall_id'];
+    protected $fillable =['description', 'hall_id'];
 
     public function hall(){
         return $this->belongsTo(Hall::class);

@@ -19,7 +19,7 @@ class LegalCaseController extends Controller
      */
     public function index()
     {
-        $legalCases = LegalCase::with('legalCases','audience', 'hall', 'stage', 'customer', 'lawyer')->paginate(5);
+        $legalCases = LegalCase::with('audience', 'hall', 'stage', 'customer', 'lawyer')->paginate(5);
         return view('legalCases.index', compact('legalCases'));
     }
 

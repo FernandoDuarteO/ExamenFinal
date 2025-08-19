@@ -15,7 +15,7 @@ return new class extends Migration
             $table->increments('id');
             $table->string('number_file')->unique();
             $table->string('type_case');
-            $table->datetime('opening_date');
+            //$table->datetime('opening_date');
             $table->string('current_status');
             $table->string('description');
 

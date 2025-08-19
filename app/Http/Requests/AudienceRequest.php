@@ -23,7 +23,7 @@ class AudienceRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'hearing_date' => 'required|date',
+            //'hearing_date' => 'required|date',
             'description' => 'required|string|min:4|max:255',
             'hall_id' => 'required'
         ];
@@ -31,8 +31,8 @@ class AudienceRequest extends FormRequest
 
     public function messages(){
         return[
-            'hearing_date.required' => 'La fecha de la audiencia es requerida.',
-            'hearing_date.date' => 'La fecha de la audiencia debe ser una fecha válida.',
+            //'hearing_date.required' => 'La fecha de la audiencia es requerida.',
+            //'hearing_date.date' => 'La fecha de la audiencia debe ser una fecha válida.',
 
             'description.required' => 'La descripción es requerida.',
             'description.string' => 'La descripción debe ser una cadena de texto.',

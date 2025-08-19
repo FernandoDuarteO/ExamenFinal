@@ -11,7 +11,7 @@ class LegalCase extends Model
     protected $perpage = 5;
 
     protected $fillable =['number_file', 'type_case',
-    'opening_date', 'current_status', 'description',
+    'current_status', 'description',
     'audience_id', 'hall_id', 'stage_id', 'customer_id', 'lawyer_id'];
 
     public function audience(){

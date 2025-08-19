@@ -113,4 +113,22 @@
         </li>
     </ul>
 
+    <ul class="navbar-nav mb-md-3">
+        <li class="nav-item {{ Request::route()->named('audiences.index') ? 'active' : '' }}">
+            <a class="nav-link {{ Request::route()->named('audiences.index') ? 'active' : '' }}"
+                href="{{ route('audiences.index') }}" wire:navigate>
+                <i class="fas fa-dove text-orange"></i> Audiencia
+            </a>
+        </li>
+    </ul>
+
+    <ul class="navbar-nav mb-md-3">
+        <li class="nav-item {{ Request::route()->named('legalCases.index') ? 'active' : '' }}">
+            <a class="nav-link {{ Request::route()->named('legalCases.index') ? 'active' : '' }}"
+                href="{{ route('legalCases.index') }}" wire:navigate>
+                <i class="fas fa-dove text-orange"></i> Casos Legales
+            </a>
+        </li>
+    </ul>
+
 </div>

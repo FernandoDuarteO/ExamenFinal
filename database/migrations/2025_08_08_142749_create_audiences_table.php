@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('audiences', function (Blueprint $table) {
             $table->increments('id');
-            $table->datetime('hearing_date');
+            /*$table->datetime('hearing_date');*/
             $table->string('description');
 
             $table->integer('hall_id')->unsigned();

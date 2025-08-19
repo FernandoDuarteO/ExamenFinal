@@ -25,7 +25,7 @@ class LegalCaseRequest extends FormRequest
         return [
             'number_file' => ['required','string','min:4','max:45',Rule::unique('legal_cases')->ignore($this->legal_case)],
             'type_case' => 'required|string|min:4|max:255',
-            'opening_date' => 'required|datetime',
+            //'opening_date' => 'required|datetime',
             'current_status' => 'required|string|min:4|max:255',
             'description' => 'required|string|min:4|max:255',
 
@@ -50,8 +50,8 @@ class LegalCaseRequest extends FormRequest
             'type_case.min' => 'El tipo de caso debe tener al menos 4 caracteres.',
             'type_case.max' => 'El tipo de caso no puede exceder los 255 caracteres.',
 
-            'opening_date.required' => 'La fecha de apertura es obligatoria.',
-            'opening_date.datetime' => 'La fecha de apertura debe ser una fecha válida.',
+            //'opening_date.required' => 'La fecha de apertura es obligatoria.',
+            //'opening_date.datetime' => 'La fecha de apertura debe ser una fecha válida.',
 
             'current_status.required' => 'El estado actual es obligatorio.',
             'current_status.string' => 'El estado actual debe ser una cadena de texto.',

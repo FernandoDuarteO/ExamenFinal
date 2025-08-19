@@ -12,6 +12,8 @@ use App\Http\Controllers\StageController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\LawyerController;
 use App\Http\Controllers\HallController;
+use App\Http\Controllers\AudienceController;
+use App\Http\Controllers\LegalCaseController;
 
 
 use App\Exports\JudgesExport;
@@ -92,6 +94,8 @@ Route::middleware('auth')->group(function () {
      Route::resource('/customers', CustomerController::class);
      Route::resource('/lawyers', LawyerController::class);
      Route::resource('/halls', HallController::class);
+     Route::resource('/audiences', AudienceController::class);
+     Route::resource('/legalCases', LegalCaseController::class);
 
 
 

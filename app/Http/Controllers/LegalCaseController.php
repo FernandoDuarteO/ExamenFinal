@@ -12,6 +12,9 @@ use App\Models\Stage;
 use App\Models\Customer;
 use App\Models\Lawyer;
 
+use App\Exports\LegalCasesExport;
+use Maatwebsite\Excel\Facades\Excel;
+
 class LegalCaseController extends Controller
 {
     /**
@@ -92,5 +95,11 @@ class LegalCaseController extends Controller
         $legalCases = LegalCase::find($id);
         $legalCases->delete();
         return redirect()->route('legalCases.index')->with('deleted', 'Caso Legal eliminida con éxito.');
+    }
+
+
+    public function export()
+    {
+        return Excel::download(new LegalCasesExport, 'casos_legales.xlsx');
     }
 }

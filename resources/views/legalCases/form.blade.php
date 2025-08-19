@@ -20,6 +20,7 @@
                     <option value="" disabled>Seleccione el tipo de caso</option>
                     <option value="Robo" {{ old('type_case', $legalCases->type_case ?? '') == 'Robo' ? 'selected': '' }}>Robo</option>
                     <option value="Feminicidio" {{ old('type_case', $legalCases->type_case ?? '') == 'Feminicidio' ? 'selected': '' }}>Feminicidio</option>
+                    <option value="Demandas por difamación" {{ old('type_case', $legalCases->type_case ?? '') == 'Demandas por difamación' ? 'selected': '' }}>Demandas por difamación</option>
                 </select>
             </div>
         </div>
@@ -32,7 +33,8 @@
                 <select name="current_status" id="current_status" class="form-control">
                     <option value="" disabled>Seleccione el estado actual</option>
                     <option value="Activo" {{ old('current_status', $legalCases->current_status ?? '') == 'Activo' ? 'selected': '' }}>Activo</option>
-                    <option value="Inactivo" {{ old('current_status', $legalCases->current_status ?? '') == 'Inactivo' ? 'selected': '' }}>Inactivo </option>
+                    <option value="Cerrado" {{ old('current_status', $legalCases->current_status ?? '') == 'Cerrado' ? 'selected': '' }}>Cerrado</option>
+                    <option value="Pendiente" {{ old('current_status', $legalCases->current_status ?? '') == 'Pendiente' ? 'selected': '' }}>Pendiente</option>
                 </select>
             </div>
         </div>

@@ -7,6 +7,10 @@
                 <div class="card-header border-0">
                     <div class="d-flex justify-content-between align-items-center">
                         <h3 class="mb-0">Casos Legales</h3>
+                        <div class="btn-group mt-2 mt-0" role="group" aria-label="Botones de acción">
+                        <a href="{{ route('legal-cases.export.excel') }}" class="btn btn-success">
+                            <i class="fas fa-file-excel"></i> Exportar a Excel
+                        </a>
                         <a href="{{ route('legalCases.create') }}" class="btn btn-primary">
                             <i class="fas fa-plus"></i> Nuevo Caso Legal
                         </a>

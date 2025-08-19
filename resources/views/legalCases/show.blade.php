@@ -27,7 +27,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="number_file">
-                            <i class="fas fa-user"></i> Número de expediente
+                            <i class="fas fa-hashtag"></i> Número de expediente
                         </label>
                         <p>{{ $legalCases->number_file }}</p>
                     </div>

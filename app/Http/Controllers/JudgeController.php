@@ -6,8 +6,6 @@ use Illuminate\Http\Request;
 use App\Models\Judge;
 use App\Http\Requests\JudgeRequest;
 
-use App\Exports\JudgesExport;
-use Maatwebsite\Excel\Facades\Excel;
 
 class JudgeController extends Controller
 {
@@ -78,9 +76,5 @@ class JudgeController extends Controller
         return redirect()->route('judges.index')->with('deleted', 'Juez eliminado exitosamente.');
     }
 
-    public function exportExcel() 
-    {
-        return Excel::download(new JudgesExport, 'juez.xlsx');
-    }
 
 }

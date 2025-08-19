@@ -16,7 +16,7 @@ use App\Http\Controllers\AudienceController;
 use App\Http\Controllers\LegalCaseController;
 
 
-use App\Exports\JudgesExport;
+use App\Exports\LegalCasesExport;
 use Maatwebsite\Excel\Facades\Excel;
 
 use App\Http\Controllers\ProfileController;
@@ -27,9 +27,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/judges/export/excel', function () {
-    return Excel::download(new JudgesExport, 'juez.xlsx');
-})->name('judges.export.excel');
+Route::get('/legal-cases/export/excel', function () {
+    return Excel::download(new LegalCasesExport, 'casos_legales.xlsx');
+})->name('legal-cases.export.excel');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

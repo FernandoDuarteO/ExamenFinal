@@ -27,6 +27,9 @@
                                 <th scope="col"><i class="fas fa-list-user"></i> Lugar de Nacimiento</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Departamento</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Residencia</th>
+                                <th scope="col"><i class="fas fa-list-user"></i> Etnia</th>
+                                <th scope="col"><i class="fas fa-list-user"></i> Dirección</th>
+                                <th scope="col"><i class="fas fa-list-user"></i> Nacionalidad</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Pais</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Estado Civil</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Acciones</th>
@@ -45,6 +48,9 @@
                             <td> {{ $judge->place_birth }}</td>
                             <td> {{ $judge->department }}</td>
                             <td> {{ $judge->residence }}</td>
+                            <td> {{ $judge->ethnicity }}</td>
+                            <td> {{ $judge->address }}</td>
+                            <td> {{ $judge->nationality }}</td>
                             <td> {{ $judge->country }}</td>
                             <td> {{ $judge->marital_status }}</td>
 

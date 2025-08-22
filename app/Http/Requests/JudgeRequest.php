@@ -32,6 +32,9 @@ class JudgeRequest extends FormRequest
             'place_birth' => 'required|string|min:4|max:255',
             'department' => 'required|string|min:4|max:255',
             'residence' => 'required|string|min:4|max:255',
+            'ethnicity' => 'required|string|min:4|max:45',
+            'address' => 'required|string|min:4|max:255',
+            'nationality' => 'required|string|min:4|max:255',
             'country' => 'required|string|min:5|max:255',
             'marital_status' => 'required|string|min:3|max:25'
         ];
@@ -84,6 +87,21 @@ class JudgeRequest extends FormRequest
             'residence.string' => 'La residencia del juez debe contener solo caracteres.',
             'residence.min' => 'La residencia del juez debe contener un minimo de caracteres de 4.',
             'residence.max' => 'La residencia del juez debe contener un maximo de caracteres de 255.',
+
+            'ethnicity.required' => 'La etnia del juez es requerida.',
+            'ethnicity.string' => 'La etnia del juez debe contener solo caracteres.',
+            'ethnicity.min' => 'La etnia del juez debe contener un minimo de caracteres de 4.',
+            'ethnicity.max' => 'La etnia del juez debe contener un maximo de caracteres de 45.',
+
+            'address.required' => 'La dirección del juez es requerida.',
+            'address.string' => 'La dirección del juez debe contener solo caracteres.',
+            'address.min' => 'La dirección del juez debe contener un minimo de caracteres de 4.',
+            'address.max' => 'La dirección del juez debe contener un maximo de caracteres de 255.',
+
+            'nationality.required' => 'La nacionalidad del juez es requerida.',
+            'nationality.string' => 'La nacionalidad del juez debe contener solo caracteres.',
+            'nationality.min' => 'La nacionalidad del juez debe contener un minimo de caracteres de 4.',
+            'nationality.max' => 'La nacionalidad del juez debe contener un maximo de caracteres de 255.',
 
             'country.required' => 'El pais del juez es requerido.',
             'country.string' => 'El pais del juez debe contener solo caracteres.',

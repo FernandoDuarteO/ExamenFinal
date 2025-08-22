@@ -116,6 +116,45 @@
     <div class="row">
         <div class="col-lg-6">
             <div class="form-group">
+                <label for="ethnicity">Etnia</label>
+                <select name="ethnicity" id="ethnicity" class="form-control">
+                    <option value="" disabled>Seleccione La Etnia del Juez</option>
+                    <option value="Mestizos" {{ old('ethnicity', $judges->ethnicity ?? '')=='Mestizos' ? 'selected': ''}}>Mestizos</option>
+                    <option value="Miskitos" {{ old('ethnicity', $judges->ethnicity ?? '')=='Miskitos' ? 'selected': ''}}>Miskitos</option>
+                    <option value="Chorotegas" {{ old('ethnicity', $judges->ethnicity ?? '')=='Chorotegas' ? 'selected': ''}}>Chorotegas</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="form-control-label" for="address">Dirección</label>
+                <input type="text" id="address" name="address" class="form-control form-control-alternative"
+                    placeholder="Ingresar la dirección del Juez"
+                    value="{{ old('address', $judges->address) }}">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label for="nationality">Nacionalidad</label>
+                <select name="nationality" id="nationality" class="form-control">
+                    <option value="" disabled>Seleccione la Nacionalidad del Juez</option>
+                    <option value="Nicaragüense" {{ old('nationality', $judges->nationality ?? '')=='Nicaragüense' ? 'selected': ''}}>Nicaragüense</option>
+                    <option value="Estadounidense" {{ old('nationality', $judges->nationality ?? '')=='Estadounidense' ? 'selected': ''}}>Estadounidense</option>
+                    <option value="Costarricense" {{ old('nationality', $judges->nationality ?? '')=='Costarricense' ? 'selected': ''}}>Costarricense</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
                 <label for="country">Pais</label>
                 <select name="country" id="country" class="form-control">
                     <option value="" disabled>Seleccione El Pais del Juez</option>

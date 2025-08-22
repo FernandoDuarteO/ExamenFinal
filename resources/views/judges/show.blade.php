@@ -104,7 +104,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="department">
-                            <i class="fas fa-user"></i> Dirección del Juez
+                            <i class="fas fa-user"></i> Departamento del Juez
                         </label>
                         <p>{{ $judges->department }}</p>
                     </div>
@@ -118,6 +118,39 @@
                             <i class="fas fa-user"></i> Residencia del Juez
                         </label>
                         <p>{{ $judges->residence }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label class="form-control-label" for="ethnicity">
+                            <i class="fas fa-user"></i> Etnia del Juez
+                        </label>
+                        <p>{{ $judges->ethnicity }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label class="form-control-label" for="address">
+                            <i class="fas fa-user"></i> Dirección del Juez
+                        </label>
+                        <p>{{ $judges->address }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label class="form-control-label" for="nationality">
+                            <i class="fas fa-user"></i> Nacionalidad del Juez
+                        </label>
+                        <p>{{ $judges->nationality }}</p>
                     </div>
                 </div>
             </div>

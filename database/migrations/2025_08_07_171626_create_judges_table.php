@@ -22,6 +22,11 @@ return new class extends Migration
             $table->string('place_birth');
             $table->string('department');
             $table->string('residence');
+            //agregando nuevos atributos de prueba
+            $table->string('ethnicity');
+            $table->string('address');
+            $table->string('nationality');
+            //agregando nuevos atributos de prueba
             $table->string('country');
             $table->string('marital_status');
             $table->timestamps();

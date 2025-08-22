@@ -13,7 +13,7 @@ class Judge extends Model
 
     protected $fillable =['name', 'age', 'gender',
     'identification_card', 'phone_number', 'email',
-    'place_birth', 'department', 'residence', 'country',
+    'place_birth', 'department', 'residence', 'ethnicity', 'address', 'nationality', 'country',
     'marital_status'];
 
     public function hall(){

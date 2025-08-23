@@ -96,7 +96,18 @@
                         <label for="student_id" class="form-control-label">
                             <i class="fas fa-user">Etapa</i>
                         </label>
-                        <p>{{ $legalCases->stage->description }}</p>
+                        <p>{{ $legalCases->stage->document_type }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label for="student_id" class="form-control-label">
+                            <i class="fas fa-user">Etapa</i>
+                        </label>
+                        <p>{{ $legalCases->stage->description }}</p> 
                     </div>
                 </div>
             </div>

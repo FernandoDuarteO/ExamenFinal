@@ -48,6 +48,7 @@
                                 <th scope="col"><i class="fas fa-list-user"></i> Descripción de la Audiencia</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Nombre de la Sala</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Etapa</th>
+                                <th scope="col"><i class="fas fa-list-user"></i> Etapa Descripción</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Nombre del Cliente</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Nombre del Abogado</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Acciones</th>
@@ -64,9 +65,11 @@
                             <td> {{ $legalCase->description }}</td>
                             <td> {{ $legalCase->audience->description ?? '-' }}</td>
                             <td> {{ $legalCase->hall->room_name ?? '-' }}</td>
+                            <td> {{ $legalCase->stage->document_type ?? '-' }}</td>
                             <td> {{ $legalCase->stage->description ?? '-' }}</td>
                             <td> {{ $legalCase->customer->name ?? '-' }}</td>
                             <td> {{ $legalCase->lawyer->name ?? '-' }}</td>
+
                             <td style="white-space: nowrap; display: flex; align-items: center;">
                                 <a href="{{ route('legalCases.show', $legalCase->id) }}" class="btn btn-primary btn-sm" style="margin-right: 5px">
                                     <i class="fas fa-eye"></i> Mostrar

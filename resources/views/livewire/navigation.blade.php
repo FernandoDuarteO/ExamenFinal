@@ -66,13 +66,13 @@
     <!-- Divider -->
     <hr class="my-3">
     <!-- Heading -->
-    <h6 class="navbar-heading text-muted">Ejemplos</h6>
+    <h6 class="navbar-heading text-muted">Gestión Legal</h6>
     <!-- Navigation -->
     <ul class="navbar-nav mb-md-3">
         <li class="nav-item {{ Request::route()->named('judges.index') ? 'active' : '' }}">
             <a class="nav-link {{ Request::route()->named('judges.index') ? 'active' : '' }}"
                 href="{{ route('judges.index') }}" wire:navigate>
-                <i class="fas fa-dove text-orange"></i> Juez
+                <i class="fas fa-gavel text-dark"></i> Juez
             </a>
         </li>
     </ul>
@@ -81,7 +81,7 @@
         <li class="nav-item {{ Request::route()->named('stages.index') ? 'active' : '' }}">
             <a class="nav-link {{ Request::route()->named('stages.index') ? 'active' : '' }}"
                 href="{{ route('stages.index') }}" wire:navigate>
-                <i class="fas fa-dove text-orange"></i> Etapa
+                <i class="fas fa-book text-dark"></i> Etapa
             </a>
         </li>
     </ul>
@@ -90,7 +90,7 @@
         <li class="nav-item {{ Request::route()->named('customers.index') ? 'active' : '' }}">
             <a class="nav-link {{ Request::route()->named('customers.index') ? 'active' : '' }}"
                 href="{{ route('customers.index') }}" wire:navigate>
-                <i class="fas fa-dove text-orange"></i> Cliente
+                <i class="fas fa-users text-dark"></i> Cliente
             </a>
         </li>
     </ul>
@@ -99,7 +99,7 @@
         <li class="nav-item {{ Request::route()->named('lawyers.index') ? 'active' : '' }}">
             <a class="nav-link {{ Request::route()->named('lawyers.index') ? 'active' : '' }}"
                 href="{{ route('lawyers.index') }}" wire:navigate>
-                <i class="fas fa-dove text-orange"></i> Abogado
+                <i class="fas fa-user-tie text-dark"></i> Abogado
             </a>
         </li>
     </ul>
@@ -108,7 +108,7 @@
         <li class="nav-item {{ Request::route()->named('halls.index') ? 'active' : '' }}">
             <a class="nav-link {{ Request::route()->named('halls.index') ? 'active' : '' }}"
                 href="{{ route('halls.index') }}" wire:navigate>
-                <i class="fas fa-dove text-orange"></i> Sala
+                <i class="fas fa-home text-dark"></i> Sala
             </a>
         </li>
     </ul>
@@ -117,7 +117,7 @@
         <li class="nav-item {{ Request::route()->named('audiences.index') ? 'active' : '' }}">
             <a class="nav-link {{ Request::route()->named('audiences.index') ? 'active' : '' }}"
                 href="{{ route('audiences.index') }}" wire:navigate>
-                <i class="fas fa-dove text-orange"></i> Audiencia
+                <i class="fas fa-hand-rock text-dark"></i> Audiencia
             </a>
         </li>
     </ul>
@@ -126,7 +126,7 @@
         <li class="nav-item {{ Request::route()->named('legalCases.index') ? 'active' : '' }}">
             <a class="nav-link {{ Request::route()->named('legalCases.index') ? 'active' : '' }}"
                 href="{{ route('legalCases.index') }}" wire:navigate>
-                <i class="fas fa-dove text-orange"></i> Casos Legales
+                <i class="fas fa-fingerprint text-dark"></i> Casos Legales
             </a>
         </li>
     </ul>

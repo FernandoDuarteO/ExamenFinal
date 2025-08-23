@@ -97,6 +97,7 @@ Route::middleware('auth')->group(function () {
      Route::resource('/audiences', AudienceController::class);
      Route::resource('/legalCases', LegalCaseController::class);
 
+     Route::get('legal-cases/export/excel', [LegalCaseController::class, 'export'])->name('legal-cases.export.excel');
 
 
     // Route::resource('/categories', CategoryController::class);

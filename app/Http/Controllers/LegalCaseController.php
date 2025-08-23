@@ -20,11 +20,18 @@ class LegalCaseController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        $legalCases = LegalCase::with('audience', 'hall', 'stage', 'customer', 'lawyer')->paginate(5);
-        return view('legalCases.index', compact('legalCases'));
+    public function index(Request $request)
+{
+    $query = LegalCase::with('audience', 'hall', 'stage', 'customer', 'lawyer');
+
+    if ($request->filled('current_status')) {
+        $query->where('current_status', $request->input('current_status'));
     }
+
+    $legalCases = $query->paginate(5)->withQueryString();
+
+    return view('legalCases.index', compact('legalCases'));
+}
 
     /**
      * Show the form for creating a new resource.
@@ -98,8 +105,9 @@ class LegalCaseController extends Controller
     }
 
 
-    public function export()
+    public function export(Request $request)
     {
-        return Excel::download(new LegalCasesExport, 'casos_legales.xlsx');
+    $current_status = $request->input('current_status');
+    return Excel::download(new LegalCasesExport($current_status), 'casos_legales.xlsx');
     }
 }

@@ -8,13 +8,32 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <h3 class="mb-0">Casos Legales</h3>
                         <div class="btn-group mt-2 mt-0" role="group" aria-label="Botones de acción">
-                        <a href="{{ route('legal-cases.export.excel') }}" class="btn btn-success">
-                            <i class="fas fa-file-excel"></i> Exportar a Excel
-                        </a>
-                        <a href="{{ route('legalCases.create') }}" class="btn btn-primary">
-                            <i class="fas fa-plus"></i> Nuevo Caso Legal
-                        </a>
+                            <a href="{{ route('legal-cases.export.excel', ['current_status' => request('current_status')]) }}" class="btn btn-success">
+                                <i class="fas fa-file-excel"></i> Exportar a Excel
+                            </a>
+                            <a href="{{ route('legalCases.create') }}" class="btn btn-primary">
+                                <i class="fas fa-plus"></i> Nuevo Caso Legal
+                            </a>
+                        </div>
                     </div>
+
+                    {{-- Filtro por estado --}}
+                    <form method="GET" action="{{ route('legalCases.index') }}" class="mt-3 mb-0">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <select name="current_status" class="form-control">
+                                    <option value="">-- Todos los estados --</option>
+                                    <option value="activo" {{ request('current_status') == 'activo' ? 'selected' : '' }}>Activo</option>
+                                    <option value="cerrado" {{ request('current_status') == 'cerrado' ? 'selected' : '' }}>Cerrado</option>
+                                    <option value="pendiente" {{ request('current_status') == 'pendiente' ? 'selected' : '' }}>Pendiente</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-primary">Filtrar</button>
+                            </div>
+                        </div>
+                    </form>
+
                 </div>
 
                 <div class="table-responsive">
@@ -41,14 +60,13 @@
                             <td> {{ $legalCase->number_file }}</td>
                             <td> {{ $legalCase->type_case }}</td>
                             <td> {{ $legalCase->created_at }}</td>
-                            <td> {{ $legalCase->current_status }}</td>
+                            <td> {{ ucfirst($legalCase->current_status) }}</td>
                             <td> {{ $legalCase->description }}</td>
-                            <td> {{ $legalCase->audience->description }}</td>
-                            <td> {{ $legalCase->hall->room_name }}</td>
-                            <td> {{ $legalCase->stage->description }}</td>
-                            <td> {{ $legalCase->customer->name }}</td>
-                            <td> {{ $legalCase->lawyer->name }}</td>
-
+                            <td> {{ $legalCase->audience->description ?? '-' }}</td>
+                            <td> {{ $legalCase->hall->room_name ?? '-' }}</td>
+                            <td> {{ $legalCase->stage->description ?? '-' }}</td>
+                            <td> {{ $legalCase->customer->name ?? '-' }}</td>
+                            <td> {{ $legalCase->lawyer->name ?? '-' }}</td>
                             <td style="white-space: nowrap; display: flex; align-items: center;">
                                 <a href="{{ route('legalCases.show', $legalCase->id) }}" class="btn btn-primary btn-sm" style="margin-right: 5px">
                                     <i class="fas fa-eye"></i> Mostrar
@@ -74,11 +92,10 @@
 
              <div class="card-footer py-4">
                 <nav aria-label="..." class="d-flex flex-wrap justify-content-center justify-content-lg-start">
-                    {{ $legalCases->links() }}
+                    {{ $legalCases->withQueryString()->links() }}
                 </nav>
              </div>
          </div>
     </div>
 </div>
-
 @endsection

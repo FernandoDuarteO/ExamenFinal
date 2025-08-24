@@ -47,8 +47,8 @@
                                 <th scope="col"><i class="fas fa-list-user"></i> Descripción del Caso</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Descripción de la Audiencia</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Nombre de la Sala</th>
-                                <th scope="col"><i class="fas fa-list-user"></i> Etapa</th>
-                                <th scope="col"><i class="fas fa-list-user"></i> Etapa Descripción</th>
+                                <th scope="col"><i class="fas fa-list-user"></i> Tipo de documentos</th>
+                                <th scope="col"><i class="fas fa-list-user"></i> Descripción de documentos</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Nombre del Cliente</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Nombre del Abogado</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Acciones</th>

@@ -94,7 +94,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label for="student_id" class="form-control-label">
-                            <i class="fas fa-user">Etapa</i>
+                            <i class="fas fa-user">Tipo de documento</i>
                         </label>
                         <p>{{ $legalCases->stage->document_type }}</p>
                     </div>
@@ -105,7 +105,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label for="student_id" class="form-control-label">
-                            <i class="fas fa-user">Etapa</i>
+                            <i class="fas fa-user">Descripción de documentos</i>
                         </label>
                         <p>{{ $legalCases->stage->description }}</p> 
                     </div>

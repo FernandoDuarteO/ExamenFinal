@@ -89,10 +89,10 @@
     <div class="row">
         <div class="col-lg-6">
             <div class="form-group">
-                <label class="form-control-label" for="stage_id"><i class="fas fa-graduation-cap"></i> Etapa</label>
+                <label class="form-control-label" for="stage_id"><i class="fas fa-graduation-cap"></i> Tipo de documento</label>
 
                 <select name="stage_id" id="stage_id" class="form-control form-control-alternative">
-                    <option disabled>Etapa</option>
+                    <option disabled>Tipo de documento</option>
                     @foreach ($stages as $stage)
                         <option value="{{ $stage->id }}" @selected(old('stage_id', $legalCases->stage_id ?? '') == $stage->id)>
                             {{ $stage->document_type }}
@@ -106,10 +106,10 @@
      <div class="row">
         <div class="col-lg-6">
             <div class="form-group">
-                <label class="form-control-label" for="stage_id"><i class="fas fa-graduation-cap"></i> Etapa Descripcion</label>
+                <label class="form-control-label" for="stage_id"><i class="fas fa-graduation-cap"></i> Descripcion de documento</label>
 
                 <select name="stage_id" id="stage_id" class="form-control form-control-alternative">
-                    <option disabled>Etapa</option>
+                    <option disabled>Descripcion de documento</option>
                     @foreach ($stages as $stage)
                         <option value="{{ $stage->id }}" @selected(old('stage_id', $legalCases->stage_id ?? '') == $stage->id)>
                             {{ $stage->description }}

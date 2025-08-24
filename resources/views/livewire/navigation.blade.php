@@ -78,10 +78,10 @@
     </ul>
 
     <ul class="navbar-nav mb-md-3">
-        <li class="nav-item {{ Request::route()->named('stages.index') ? 'active' : '' }}">
-            <a class="nav-link {{ Request::route()->named('stages.index') ? 'active' : '' }}"
-                href="{{ route('stages.index') }}" wire:navigate>
-                <i class="fas fa-book text-dark"></i> Etapa
+        <li class="nav-item {{ Request::route()->named('lawyers.index') ? 'active' : '' }}">
+            <a class="nav-link {{ Request::route()->named('lawyers.index') ? 'active' : '' }}"
+                href="{{ route('lawyers.index') }}" wire:navigate>
+                <i class="fas fa-user-tie text-dark"></i> Abogado
             </a>
         </li>
     </ul>
@@ -96,15 +96,6 @@
     </ul>
 
     <ul class="navbar-nav mb-md-3">
-        <li class="nav-item {{ Request::route()->named('lawyers.index') ? 'active' : '' }}">
-            <a class="nav-link {{ Request::route()->named('lawyers.index') ? 'active' : '' }}"
-                href="{{ route('lawyers.index') }}" wire:navigate>
-                <i class="fas fa-user-tie text-dark"></i> Abogado
-            </a>
-        </li>
-    </ul>
-
-    <ul class="navbar-nav mb-md-3">
         <li class="nav-item {{ Request::route()->named('halls.index') ? 'active' : '' }}">
             <a class="nav-link {{ Request::route()->named('halls.index') ? 'active' : '' }}"
                 href="{{ route('halls.index') }}" wire:navigate>
@@ -112,6 +103,16 @@
             </a>
         </li>
     </ul>
+
+    <ul class="navbar-nav mb-md-3">
+        <li class="nav-item {{ Request::route()->named('stages.index') ? 'active' : '' }}">
+            <a class="nav-link {{ Request::route()->named('stages.index') ? 'active' : '' }}"
+                href="{{ route('stages.index') }}" wire:navigate>
+                <i class="fas fa-book text-dark"></i> Etapa
+            </a>
+        </li>
+    </ul>
+
 
     <ul class="navbar-nav mb-md-3">
         <li class="nav-item {{ Request::route()->named('audiences.index') ? 'active' : '' }}">

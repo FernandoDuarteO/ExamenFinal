@@ -1,5 +1,5 @@
 @extends('layouts.panel')
-@section('title', 'Dashboard')
+@section('title', 'Gestión Legal')
 
 @section('content')
 

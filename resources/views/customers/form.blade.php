@@ -39,6 +39,17 @@
     <div class="row">
         <div class="col-lg-6">
             <div class="form-group">
+                <label class="form-control-label" for="date_birth">Fecha de Nacimiento del Cliente</label>
+                <input type="date" id="date_birth" name="date_birth" class="form-control form-control-alternative"
+                    placeholder="Ingresar la Fecha de Nacimiento del Cliente"
+                    value="{{ old('date_birth', $customers->date_birth) }}">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
                 <label class="form-control-label" for="address">Dirección</label>
                 <input type="text" id="address" name="address" class="form-control form-control-alternative"
                     placeholder="Ingresar la dirección del Cliente"
@@ -93,6 +104,34 @@
                     <option value="Esteli" {{ old('departments', $customers->departments ?? '')=='Esteli' ? 'selected': ''}}>Esteli</option>
                     <option value="Managua" {{ old('departments', $customers->departments ?? '')=='Managua' ? 'selected': ''}}>Managua</option>
                     <option value="León" {{ old('departments', $customers->departments ?? '')=='León' ? 'selected': ''}}>León</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label for="residence">Residencia</label>
+                <select name="residence" id="residence" class="form-control">
+                    <option value="" disabled>Seleccione La Residencia del Cliente</option>
+                    <option value="Esteli" {{ old('residence', $customers->residence ?? '')=='Esteli' ? 'selected': ''}}>Esteli</option>
+                    <option value="Managua" {{ old('residence', $customers->residence ?? '')=='Managua' ? 'selected': ''}}>Managua</option>
+                    <option value="León" {{ old('residence', $customers->residence ?? '')=='León' ? 'selected': ''}}>León</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+     <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label for="nationality">Nacionalidad</label>
+                <select name="nationality" id="nationality" class="form-control">
+                    <option value="" disabled>Seleccione La Nacionalidad del Cliente</option>
+                    <option value="Nicaraguense" {{ old('nationality', $customers->nationality ?? '')=='Nicaraguense' ? 'selected': ''}}>Nicaraguense</option>
+                    <option value="España" {{ old('nationality', $customers->nationality ?? '')=='España' ? 'selected': ''}}>España</option>
+                    <option value="México" {{ old('nationality', $customers->nationality ?? '')=='México' ? 'selected': ''}}>México</option>
                 </select>
             </div>
         </div>

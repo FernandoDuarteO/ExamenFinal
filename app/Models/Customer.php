@@ -10,10 +10,20 @@ class Customer extends Model
     use HasFactory;
     protected $perpage = 5;
 
-    protected $fillable =['name', 'age', 'gender',
-    'address', 'identification_card', 'phone_number',
-    'place_birth', 'departments', 'country',
-    'marital_status'];
+    protected $fillable =[
+        'name',
+        'age',
+        'gender',
+        'date_birth',
+        'address',
+        'identification_card',
+        'phone_number',
+        'place_birth',
+        'departments',
+        'residence',
+        'nationality',
+        'country',
+        'marital_status'];
 
     public function legalcase(){
         return $this->hasMany(LegalCase::class);

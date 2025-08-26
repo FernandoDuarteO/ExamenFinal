@@ -20,11 +20,14 @@
                                 <th scope="col"><i class="fas fa-list-user"></i> Nombre del cliente</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Edad</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Género</th>
+                                <th scope="col"><i class="fas fa-list-user"></i> Fecha de Nacimiento</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Dirección</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Identificación</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Número de Telefono</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Lugar de Nacimiento</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Departamento</th>
+                                <th scope="col"><i class="fas fa-list-user"></i> Residencia</th>
+                                <th scope="col"><i class="fas fa-list-user"></i> Nacionalidad</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Pais</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Estado Civil</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Acciones</th>
@@ -37,10 +40,13 @@
                             <td> {{ $customer->name }}</td>
                             <td> {{ $customer->age }}</td>
                             <td> {{ $customer->gender }}</td>
+                            <td> {{ $customer->date_birth }}</td>
                             <td> {{ $customer->address }}</td>
                             <td> {{ $customer->identification_card }}</td>
                             <td> {{ $customer->phone_number }}</td>
                             <td> {{ $customer->place_birth }}</td>
+                            <td> {{ $customer->residence }}</td>
+                            <td> {{ $customer->nationality }}</td>
                             <td> {{ $customer->departments }}</td>
                             <td> {{ $customer->country }}</td>
                             <td> {{ $customer->marital_status }}</td>

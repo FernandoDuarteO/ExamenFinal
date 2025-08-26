@@ -56,6 +56,17 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label class="form-control-label" for="date_birth">
+                            <i class="fas fa-user"></i> Fecha de Nacimiento del Cliente
+                        </label>
+                        <p>{{ $customers->date_birth }}</p>
+                    </div>
+                </div>
+            </div>
+
 
             <div class="row">
                 <div class="col-lg-12">
@@ -115,6 +126,28 @@
             </div>
 
             <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label class="form-control-label" for="residence">
+                            <i class="fas fa-user"></i> Residencia del Cliente
+                        </label>
+                        <p>{{ $customers->residence }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label class="form-control-label" for="nationality">
+                            <i class="fas fa-user"></i> Nacionalidad del Cliente
+                        </label>
+                        <p>{{ $customers->nationality }}</p>
+                    </div>
+                </div>
+            </div>
+
+           <div class="row">
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="country">

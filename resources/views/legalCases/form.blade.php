@@ -18,8 +18,8 @@
                 <label for="type_case">Tipo de Caso</label>
                 <select name="type_case" id="type_case" class="form-control">
                     <option value="" disabled>Seleccione el tipo de caso</option>
-                    <option value="Robo" {{ old('type_case', $legalCases->type_case ?? '') == 'Robo' ? 'selected': '' }}>Robo</option>
-                    <option value="Feminicidio" {{ old('type_case', $legalCases->type_case ?? '') == 'Feminicidio' ? 'selected': '' }}>Feminicidio</option>
+                    <option value="Demandas por desalojo" {{ old('type_case', $legalCases->type_case ?? '') == 'Demandas por desalojo' ? 'selected': '' }}>Demandas por desalojo</option>
+                    <option value="Demandas de incumplimiento de contrato" {{ old('type_case', $legalCases->type_case ?? '') == 'Demandas de incumplimiento de contrato' ? 'selected': '' }}>Demandas de incumplimiento de contrato</option>
                     <option value="Demandas por difamación" {{ old('type_case', $legalCases->type_case ?? '') == 'Demandas por difamación' ? 'selected': '' }}>Demandas por difamación</option>
                 </select>
             </div>

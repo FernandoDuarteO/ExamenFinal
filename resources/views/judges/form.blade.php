@@ -102,9 +102,9 @@
     <div class="row">
         <div class="col-lg-6">
             <div class="form-group">
-                <label for="residence">Departamento</label>
+                <label for="residence">Residencia</label>
                 <select name="residence" id="residence" class="form-control">
-                    <option value="" disabled>Seleccione El Departamento del Juez</option>
+                    <option value="" disabled>Seleccione La Residencia del Juez</option>
                     <option value="Masaya" {{ old('residence', $judges->residence ?? '')=='Masaya' ? 'selected': ''}}>Masaya</option>
                     <option value="Esteli" {{ old('residence', $judges->residence ?? '')=='Esteli' ? 'selected': ''}}>Esteli</option>
                     <option value="León" {{ old('residence', $judges->residence ?? '')=='León' ? 'selected': ''}}>León</option>

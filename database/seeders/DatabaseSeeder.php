@@ -43,7 +43,8 @@ class DatabaseSeeder extends Seeder
         );
 
         $this->call([
-            CustomerSeeder::class
+            CustomerSeeder::class,
+            JudgeSeeder::class
         ]);
 
         // Category::factory(7)->create();

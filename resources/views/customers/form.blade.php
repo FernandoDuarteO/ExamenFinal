@@ -129,9 +129,9 @@
                 <label for="nationality">Nacionalidad</label>
                 <select name="nationality" id="nationality" class="form-control">
                     <option value="" disabled>Seleccione La Nacionalidad del Cliente</option>
-                    <option value="Nicaraguense" {{ old('nationality', $customers->nationality ?? '')=='Nicaraguense' ? 'selected': ''}}>Nicaraguense</option>
-                    <option value="España" {{ old('nationality', $customers->nationality ?? '')=='España' ? 'selected': ''}}>España</option>
-                    <option value="México" {{ old('nationality', $customers->nationality ?? '')=='México' ? 'selected': ''}}>México</option>
+                    <option value="Nicaragüense" {{ old('nationality', $customers->nationality ?? '')=='Nicaragüense' ? 'selected': ''}}>Nicaragüense</option>
+                    <option value="Español" {{ old('nationality', $customers->nationality ?? '')=='Español' ? 'selected': ''}}>Español</option>
+                    <option value="Peruano" {{ old('nationality', $customers->nationality ?? '')=='Peruano' ? 'selected': ''}}>Peruano</option>
                 </select>
             </div>
         </div>

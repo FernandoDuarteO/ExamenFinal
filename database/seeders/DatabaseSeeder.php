@@ -46,6 +46,10 @@ class DatabaseSeeder extends Seeder
             CustomerSeeder::class,
             JudgeSeeder::class,
             LawyerSeeder::class,
+            HallSeeder::class,
+            AudienceSeeder::class,
+            StageSeeder::class,
+            LegalCaseSeeder::class
         ]);
 
         // Category::factory(7)->create();

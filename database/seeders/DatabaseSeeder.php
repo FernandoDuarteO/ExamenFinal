@@ -42,6 +42,10 @@ class DatabaseSeeder extends Seeder
             ],
         );
 
+        $this->call([
+            CustomerSeeder::class
+        ]);
+
         // Category::factory(7)->create();
         // Post::factory(20)->create();
         // Animal::factory(5)->create();

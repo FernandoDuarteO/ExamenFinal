@@ -32,6 +32,10 @@ class LawyerRequest extends FormRequest
             'professional_code' => ['required','string','min:5','max:45',Rule::unique('lawyers')->ignore($this->lawyer)],
             'place_birth' => 'required|string|min:4|max:255',
             'department' => 'required|string|min:3|max:255',
+            'residence' => 'required|string|min:4|max:255',
+            'ethnicity' => 'required|string|min:4|max:255',
+            'address' => 'required|string|min:4|max:255',
+            'nationality' => 'required|string|min:4|max:255',
             'country' => 'required|string|min:5|max:255',
             'marital_status' => 'required|string|min:5|max:25'
         ];
@@ -85,6 +89,26 @@ class LawyerRequest extends FormRequest
             'department.string' => 'El departamento del abogado debe ser una cadena de texto.',
             'department.min' => 'El departamento del abogado debe contener un mínimo de 3 caracteres.',
             'department.max' => 'El departamento del abogado debe contener un máximo de 255 caracteres.',
+
+            'residence.required' => 'La residencia del abogado es requerida.',
+            'residence.string' => 'La residencia del abogado debe ser una cadena de texto.',
+            'residence.min' => 'La residencia del abogado debe contener un mínimo de 4 caracteres.',
+            'residence.max' => 'La residencia del abogado debe contener un máximo de 255 caracteres.',
+
+            'ethnicity.required' => 'La etnia del abogado es requerida.',
+            'ethnicity.string' => 'La etnia del abogado debe ser una cadena de texto.',
+            'ethnicity.min' => 'La etnia del abogado debe contener un mínimo de 4 caracteres.',
+            'ethnicity.max' => 'La etnia del abogado debe contener un máximo de 255 caracteres.',
+
+            'address.required' => 'La dirección del abogado es requerida.',
+            'address.string' => 'La dirección del abogado debe ser una cadena de texto.',
+            'address.min' => 'La dirección del abogado debe contener un mínimo de 4 caracteres.',
+            'address.max' => 'La dirección del abogado debe contener un máximo de 255 caracteres.',
+
+            'nationality.required' => 'La nacionalidad del abogado es requerida.',
+            'nationality.string' => 'La nacionalidad del abogado debe ser una cadena de texto.',
+            'nationality.min' => 'La nacionalidad del abogado debe contener un mínimo de 4 caracteres.',
+            'nationality.max' => 'La nacionalidad del abogado debe contener un máximo de 255 caracteres.',
 
             'country.required' => 'El país del abogado es requerido.',
             'country.string' => 'El país del abogado debe ser una cadena de texto.',

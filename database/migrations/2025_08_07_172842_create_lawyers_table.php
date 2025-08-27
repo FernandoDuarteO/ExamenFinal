@@ -22,6 +22,10 @@ return new class extends Migration
             $table->string('professional_code', 45)->unique();
             $table->string('place_birth');
             $table->string('department');
+            $table->string('residence');
+            $table->string('ethnicity');
+            $table->string('address');
+            $table->string('nationality');
             $table->string('country');
             $table->string('marital_status');
             $table->timestamps();

@@ -115,6 +115,50 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="form-group">
+                        <label class="form-control-label" for="residence">
+                            <i class="fas fa-user"></i> Residencia del Abogado
+                        </label>
+                        <p>{{ $lawyers->residence }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label class="form-control-label" for="ethnicity">
+                            <i class="fas fa-user"></i> Etnia del Abogado
+                        </label>
+                        <p>{{ $lawyers->ethnicity }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label class="form-control-label" for="address">
+                            <i class="fas fa-user"></i> Dirección del Abogado
+                        </label>
+                        <p>{{ $lawyers->address }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label class="form-control-label" for="nationality">
+                            <i class="fas fa-user"></i> Nacionalidad del Abogado
+                        </label>
+                        <p>{{ $lawyers->nationality }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
                         <label class="form-control-label" for="country">
                             <i class="fas fa-user"></i> Pais del Abogado
                         </label>

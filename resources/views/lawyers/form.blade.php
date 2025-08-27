@@ -112,6 +112,59 @@
     <div class="row">
         <div class="col-lg-6">
             <div class="form-group">
+                <label for="residence">Residencia</label>
+                <select name="residence" id="residence" class="form-control">
+                    <option value="" disabled>Seleccione La Residencia del Abogado</option>
+                    <option value="Masaya" {{ old('residence', $lawyers->residence ?? '')=='Masaya' ? 'selected': ''}}>Masaya</option>
+                    <option value="Esteli" {{ old('residence', $lawyers->residence ?? '')=='Esteli' ? 'selected': ''}}>Esteli</option>
+                    <option value="León" {{ old('residence', $lawyers->residence ?? '')=='León' ? 'selected': ''}}>León</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label for="ethnicity">Etnia</label>
+                <select name="ethnicity" id="ethnicity" class="form-control">
+                    <option value="" disabled>Seleccione La Etnia del Abogado</option>
+                    <option value="Mestizos" {{ old('ethnicity', $lawyers->ethnicity ?? '')=='Mestizos' ? 'selected': ''}}>Mestizos</option>
+                    <option value="Miskitos" {{ old('ethnicity', $lawyers->ethnicity ?? '')=='Miskitos' ? 'selected': ''}}>Miskitos</option>
+                    <option value="Chorotegas" {{ old('ethnicity', $lawyers->ethnicity ?? '')=='Chorotegas' ? 'selected': ''}}>Chorotegas</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label class="form-control-label" for="address">Dirección</label>
+                <input type="text" id="address" name="address" class="form-control form-control-alternative"
+                    placeholder="Ingresar la dirección del Abogado"
+                    value="{{ old('address', $lawyers->address) }}">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label for="nationality">Nacionalidad</label>
+                <select name="nationality" id="nationality" class="form-control">
+                    <option value="" disabled>Seleccione la Nacionalidad del Abogado</option>
+                    <option value="Nicaragüense" {{ old('nationality', $lawyers->nationality ?? '')=='Nicaragüense' ? 'selected': ''}}>Nicaragüense</option>
+                    <option value="Estadounidense" {{ old('nationality', $lawyers->nationality ?? '')=='Estadounidense' ? 'selected': ''}}>Estadounidense</option>
+                    <option value="Costarricense" {{ old('nationality', $lawyers->nationality ?? '')=='Costarricense' ? 'selected': ''}}>Costarricense</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
                 <label for="country">Pais</label>
                 <select name="country" id="country" class="form-control">
                     <option value="" disabled>Seleccione El Pais del Abogado</option>

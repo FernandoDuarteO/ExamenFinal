@@ -44,7 +44,8 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             CustomerSeeder::class,
-            JudgeSeeder::class
+            JudgeSeeder::class,
+            LawyerSeeder::class,
         ]);
 
         // Category::factory(7)->create();

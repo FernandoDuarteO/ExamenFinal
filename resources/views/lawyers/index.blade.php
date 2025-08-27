@@ -26,6 +26,10 @@
                                 <th scope="col"><i class="fas fa-list-user"></i> Código Profesional</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Lugar de Nacimiento</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Departamento</th>
+                                <th scope="col"><i class="fas fa-list-user"></i> Residencia</th>
+                                <th scope="col"><i class="fas fa-list-user"></i> Etnia</th>
+                                <th scope="col"><i class="fas fa-list-user"></i> Dirección</th>
+                                <th scope="col"><i class="fas fa-list-user"></i> Nacionalidad</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Pais</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Estado Civil</th>
                                 <th scope="col"><i class="fas fa-list-user"></i> Acciones</th>
@@ -44,6 +48,10 @@
                             <td> {{ $lawyer->professional_code }}</td>
                             <td> {{ $lawyer->place_birth }}</td>
                             <td> {{ $lawyer->department }}</td>
+                            <td> {{ $lawyer->residence }}</td>
+                            <td> {{ $lawyer->ethnicity }}</td>
+                            <td> {{ $lawyer->address }}</td>
+                            <td> {{ $lawyer->nationality }}</td>
                             <td> {{ $lawyer->country }}</td>
                             <td> {{ $lawyer->marital_status }}</td>
 

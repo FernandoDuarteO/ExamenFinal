@@ -9,8 +9,10 @@
                     <label for="document_type">Tipo de documento</label>
                     <select name="document_type" id="document_type" class="form-control">
                         <option value="" disabled>Seleccione el tipo de documento</option>
-                        <option value="Fotos" {{ old('document_type', $stages->document_type ?? '') == 'Fotos' ? 'selected': '' }}>Fotos</option>
-                        <option value="Presentación de pruebas" {{ old('document_type', $stages->document_type ?? '') == 'Presentación de pruebas' ? 'selected': '' }}>Presentación de pruebas</option>
+                        <option value="Informe de actividades" {{ old('document_type', $stages->document_type ?? '') == 'Informe de actividades' ? 'selected': '' }}>Informe de actividades</option>
+                        <option value="Problemas con contratos" {{ old('document_type', $stages->document_type ?? '') == 'Problemas con contratos' ? 'selected': '' }}>Problemas con contratos</option>
+                        <option value="Mandato judicial" {{ old('document_type', $stages->document_type ?? '') == 'Mandato judicial' ? 'selected': '' }}>Mandato judicial</option>
+                        <option value="Escrito de demanda" {{ old('document_type', $stages->document_type ?? '') == 'Escrito de demanda' ? 'selected': '' }}>Escrito de demanda</option>
                     </select>
                 </div>
             </div>

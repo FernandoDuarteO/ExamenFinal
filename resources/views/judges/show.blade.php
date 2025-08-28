@@ -27,7 +27,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="name">
-                            <i class="fas fa-user"></i> Nombre Completo del Juez
+                            <i class="fas fa-user-tie"></i> Nombre Completo del Juez
                         </label>
                         <p>{{ $judges->name }}</p>
                     </div>
@@ -38,7 +38,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="age">
-                            <i class="fas fa-user"></i> Edad del Juez
+                            <i class="fas fa-edit"></i> Edad del Juez
                         </label>
                         <p>{{ $judges->age }}</p>
                     </div>
@@ -49,7 +49,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="gender">
-                            <i class="fas fa-user"></i> Género del Juez
+                            <i class="fas fa-venus-mars"></i> Género del Juez
                         </label>
                         <p>{{ $judges->gender }}</p>
                     </div>
@@ -60,7 +60,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="identification_card">
-                            <i class="fas fa-user"></i> Identificación del Juez
+                            <i class="fas fa-address-card"></i> Identificación del Juez
                         </label>
                         <p>{{ $judges->identification_card }}</p>
                     </div>
@@ -71,7 +71,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="phone_number">
-                            <i class="fas fa-user"></i> Número de Telefono del Juez
+                            <i class="fas fa-phone"></i> Número de Telefono del Juez
                         </label>
                         <p>{{ $judges->phone_number }}</p>
                     </div>
@@ -82,7 +82,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="email">
-                            <i class="fas fa-user"></i> Email del Juez
+                            <i class="fas fa-envelope"></i> Email del Juez
                         </label>
                         <p>{{ $judges->email }}</p>
                     </div>
@@ -93,7 +93,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="place_birth">
-                            <i class="fas fa-user"></i> Lugar de Nacimiento del Juez
+                            <i class="fas fa-map"></i> Lugar de Nacimiento del Juez
                         </label>
                         <p>{{ $judges->place_birth }}</p>
                     </div>
@@ -104,7 +104,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="department">
-                            <i class="fas fa-user"></i> Departamento del Juez
+                            <i class="fas fa-map"></i> Departamento del Juez
                         </label>
                         <p>{{ $judges->department }}</p>
                     </div>
@@ -115,7 +115,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="residence">
-                            <i class="fas fa-user"></i> Residencia del Juez
+                            <i class="fas fa-map"></i> Residencia del Juez
                         </label>
                         <p>{{ $judges->residence }}</p>
                     </div>
@@ -126,7 +126,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="ethnicity">
-                            <i class="fas fa-user"></i> Etnia del Juez
+                            <i class="fas fa-globe-americas"></i> Etnia del Juez
                         </label>
                         <p>{{ $judges->ethnicity }}</p>
                     </div>
@@ -137,7 +137,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="address">
-                            <i class="fas fa-user"></i> Dirección del Juez
+                            <i class="fas fa-map-marker-alt"></i> Dirección del Juez
                         </label>
                         <p>{{ $judges->address }}</p>
                     </div>
@@ -148,7 +148,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="nationality">
-                            <i class="fas fa-user"></i> Nacionalidad del Juez
+                            <i class="fas fa-map"></i> Nacionalidad del Juez
                         </label>
                         <p>{{ $judges->nationality }}</p>
                     </div>
@@ -159,7 +159,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="country">
-                            <i class="fas fa-user"></i> Pais del Juez
+                            <i class="fas fa-map"></i> Pais del Juez
                         </label>
                         <p>{{ $judges->country }}</p>
                     </div>
@@ -170,7 +170,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="marital_status">
-                            <i class="fas fa-user"></i> Estado Civil del Juez
+                            <i class="fas fa-list-alt"></i> Estado Civil del Juez
                         </label>
                         <p>{{ $judges->marital_status }}</p>
                     </div>

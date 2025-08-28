@@ -27,7 +27,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="name">
-                            <i class="fas fa-user"></i> Nombre Completo del Abogado
+                            <i class="fas fa-user-tie"></i> Nombre Completo del Abogado
                         </label>
                         <p>{{ $lawyers->name }}</p>
                     </div>
@@ -38,7 +38,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="age">
-                            <i class="fas fa-user"></i> Edad del Abogado
+                            <i class="fas fa-edit"></i> Edad del Abogado
                         </label>
                         <p>{{ $lawyers->age }}</p>
                     </div>
@@ -49,7 +49,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="gender">
-                            <i class="fas fa-user"></i> Género del Abogado
+                            <i class="fas fa-venus-mars"></i> Género del Abogado
                         </label>
                         <p>{{ $lawyers->gender }}</p>
                     </div>
@@ -61,7 +61,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="identification_card">
-                            <i class="fas fa-user"></i> Identificación del Abogado
+                            <i class="fas fa-address-card"></i> Identificación del Abogado
                         </label>
                         <p>{{ $lawyers->identification_card }}</p>
                     </div>
@@ -72,7 +72,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="phone_number">
-                            <i class="fas fa-user"></i> Número de Telefono del Abogado
+                            <i class="fas fa-phone"></i> Número de Telefono del Abogado
                         </label>
                         <p>{{ $lawyers->phone_number }}</p>
                     </div>
@@ -83,7 +83,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="email">
-                            <i class="fas fa-user"></i> Email del Abogado
+                            <i class="fas fa-envelope"></i> Email del Abogado
                         </label>
                         <p>{{ $lawyers->email }}</p>
                     </div>
@@ -94,7 +94,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="place_birth">
-                            <i class="fas fa-user"></i> Lugar de Nacimiento del Abogado
+                            <i class="fas fa-map"></i> Lugar de Nacimiento del Abogado
                         </label>
                         <p>{{ $lawyers->place_birth }}</p>
                     </div>
@@ -105,7 +105,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="department">
-                            <i class="fas fa-user"></i> Departamento del Abogado
+                            <i class="fas fa-map"></i> Departamento del Abogado
                         </label>
                         <p>{{ $lawyers->department }}</p>
                     </div>
@@ -116,7 +116,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="residence">
-                            <i class="fas fa-user"></i> Residencia del Abogado
+                            <i class="fas fa-map"></i> Residencia del Abogado
                         </label>
                         <p>{{ $lawyers->residence }}</p>
                     </div>
@@ -127,7 +127,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="ethnicity">
-                            <i class="fas fa-user"></i> Etnia del Abogado
+                            <i class="fas fa-list-alt"></i> Etnia del Abogado
                         </label>
                         <p>{{ $lawyers->ethnicity }}</p>
                     </div>
@@ -138,7 +138,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="address">
-                            <i class="fas fa-user"></i> Dirección del Abogado
+                            <i class="fas fa-map-marker-alt"></i> Dirección del Abogado
                         </label>
                         <p>{{ $lawyers->address }}</p>
                     </div>
@@ -149,7 +149,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="nationality">
-                            <i class="fas fa-user"></i> Nacionalidad del Abogado
+                            <i class="fas fa-map"></i> Nacionalidad del Abogado
                         </label>
                         <p>{{ $lawyers->nationality }}</p>
                     </div>
@@ -160,7 +160,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="country">
-                            <i class="fas fa-user"></i> Pais del Abogado
+                            <i class="fas fa-map"></i> Pais del Abogado
                         </label>
                         <p>{{ $lawyers->country }}</p>
                     </div>
@@ -171,7 +171,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="marital_status">
-                            <i class="fas fa-user"></i> Estado Civil del Abogado
+                            <i class="fas fa-list-alt"></i> Estado Civil del Abogado
                         </label>
                         <p>{{ $lawyers->marital_status }}</p>
                     </div>

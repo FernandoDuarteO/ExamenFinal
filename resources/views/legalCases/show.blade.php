@@ -38,7 +38,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="type_case">
-                            <i class="fas fa-user"></i> Tipo de Caso
+                            <i class="fas fa-list-ul"></i> Tipo de Caso
                         </label>
                         <p>{{ $legalCases->type_case }}</p>
                     </div>
@@ -49,7 +49,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="current_status">
-                            <i class="fas fa-user"></i> Estado del Caso
+                            <i class="fas fa-list-ul"></i> Estado del Caso
                         </label>
                         <p>{{ $legalCases->current_status }}</p>
                     </div>
@@ -60,7 +60,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="description">
-                            <i class="fas fa-user"></i> Descripción del Caso
+                            <i class="fas fa-comments"></i> Descripción del Caso
                         </label>
                         <p>{{ $legalCases->description }}</p>
                     </div>
@@ -72,7 +72,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label for="student_id" class="form-control-label">
-                            <i class="fas fa-user">Descripción de la Audiencia</i>
+                            <i class="fas fa-comments"></i> Descripción de la Audiencia
                         </label>
                         <p>{{ $legalCases->audience->description }}</p>
                     </div>
@@ -83,7 +83,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label for="student_id" class="form-control-label">
-                            <i class="fas fa-user">Nombre del Sala</i>
+                            <i class="fas fa-microphone"></i> Nombre del Sala
                         </label>
                         <p>{{ $legalCases->hall->room_name }}</p>
                     </div>
@@ -94,7 +94,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label for="student_id" class="form-control-label">
-                            <i class="fas fa-user">Tipo de documento</i>
+                            <i class="fas fa-folder-open"></i> Tipo de documento
                         </label>
                         <p>{{ $legalCases->stage->document_type }}</p>
                     </div>
@@ -105,7 +105,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label for="student_id" class="form-control-label">
-                            <i class="fas fa-user">Descripción de documentos</i>
+                            <i class="fas fa-comments"></i> Descripción de documentos
                         </label>
                         <p>{{ $legalCases->stage->description }}</p> 
                     </div>
@@ -116,7 +116,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label for="student_id" class="form-control-label">
-                            <i class="fas fa-user">Nombre del Cliente</i>
+                            <i class="fas fa-user-tie"></i> Nombre del Cliente
                         </label>
                         <p>{{ $legalCases->customer->name }}</p>
                     </div>
@@ -127,7 +127,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label for="student_id" class="form-control-label">
-                            <i class="fas fa-user">Nombre del Abogado</i>
+                            <i class="fas fa-user-tie"></i> Nombre del Abogado
                         </label>
                         <p>{{ $legalCases->lawyer->name }}</p>
                     </div>

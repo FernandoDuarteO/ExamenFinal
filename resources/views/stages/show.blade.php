@@ -27,7 +27,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="document_type">
-                            <i class="fas fa-user"></i> Tipo de Documento
+                            <i class="fas fa-list-ul"></i> Tipo de Documento
                         </label>
                         <p>{{ $stages->document_type }}</p>
                     </div>
@@ -38,7 +38,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="description">
-                            <i class="fas fa-user"></i> Descripción de la Etapa
+                            <i class="fas fa-comments"></i> Descripción de la Etapa
                         </label>
                         <p>{{ $stages->description }}</p>
                     </div>

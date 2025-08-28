@@ -27,7 +27,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="description">
-                            <i class="fas fa-user"></i> Descripción de la Audiencia
+                            <i class="fas fa-info-circle"></i> Descripción de la Audiencia
                         </label>
                         <p>{{ $audiences->description }}</p>
                     </div>
@@ -38,7 +38,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label for="student_id" class="form-control-label">
-                            <i class="fas fa-user">Nombre del Sala</i>
+                            <i class="fas fa-home"></i> Nombre del Sala
                         </label>
                         <p>{{ $audiences->hall->room_name }}</p>
                     </div>

@@ -27,7 +27,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="room_name">
-                            <i class="fas fa-user"></i> Nombre de la Sala
+                            <i class="fas fa-home"></i> Nombre de la Sala
                         </label>
                         <p>{{ $halls->room_name }}</p>
                     </div>
@@ -38,7 +38,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="location_room">
-                            <i class="fas fa-user"></i> Ubicación de la Sala
+                            <i class="fas fa-map-marker-alt"></i> Ubicación de la Sala
                         </label>
                         <p>{{ $halls->location_room }}</p>
                     </div>
@@ -49,7 +49,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label class="form-control-label" for="code_room">
-                            <i class="fas fa-user"></i> Código de la Sala
+                            <i class="fas fa-lock"></i> Código de la Sala
                         </label>
                         <p>{{ $halls->code_room }}</p>
                     </div>
@@ -61,7 +61,7 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label for="student_id" class="form-control-label">
-                            <i class="fas fa-user">Nombre del Juez</i>
+                            <i class="fas fa-user-tie"></i> Nombre del Juez
                         </label>
                         <p>{{ $halls->judge->name }}</p>
                     </div>

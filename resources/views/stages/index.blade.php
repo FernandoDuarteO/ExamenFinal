@@ -32,7 +32,7 @@
         <td>
             @if($stage->file)
                 <a href="{{ asset('storage/' . $stage->file) }}" target="_blank">
-                    {{ $stage->original_name ?? 'Descargar archivo' }}
+                    {{ $stage->original_name ?? 'Archivo' }}
                 </a>
             @else
                 No hay archivo

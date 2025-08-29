@@ -57,7 +57,7 @@
                         @if($stages->file)
                             <p>
                                 <a href="{{ asset('storage/' . $stages->file) }}" target="_blank">
-                                    {{ $stages->original_name ?? 'Descargar archivo' }}
+                                    {{ $stages->original_name ?? 'Archivo' }}
                                 </a>
                             </p>
                         @else
